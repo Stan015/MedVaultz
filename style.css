@@ -13,13 +13,14 @@
 }
 
 body {
-    width: 100svw;
+    width: 100%;
     background-color: #FFFFFF;
+    scroll-behavior: smooth;
 }
 
 header {
     display: flex;
-    width: calc(100svw - 20rem);
+    width: calc(100% - 20rem);
     height: 10rem;
     position: relative;
     background-color: #ECECEC;
@@ -434,57 +435,47 @@ main {
         width: 34rem;
         height: 35rem;
         background-color: #ECECEC;
+    }
 
-        + div {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            width: 28rem;
-            justify-content: center;
-            align-items: center;
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 28rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
 
-            h2 {
-                font-size: 3rem;
-            }
-
-            p {
-                font-size: 1.3rem;
-                margin-bottom: 3rem;
-                text-align: center;
-            }
-
-            form {
-                display: flex;
-                flex-direction: column;
-                width: calc(100% - 4rem);
-                margin: 0 auto;
-                justify-content: center;
-                align-items: center;
-                gap: 1rem;
-
-                input {
-                    width: calc(100% - 2rem);
-                    height: 3rem;
-                    padding: 0 1rem;
-                    border: 1px solid #1E1E1E;
-                    border-radius: 0.2rem;
-
-                }
-
-                button {
-                    color: var(--clr-action_btn);
-                    font-size: 1.3rem;
-                    height: 3rem;
-                    width: 100%;
-                    text-decoration: none;
-                    background-color: var(--bg-action-btn);
-                    border: 1px solid #1E1E1E;
-                    border-radius: 0.2rem; 
-                    cursor: pointer;
-                }
-                
-            }
+        h2 {
+            font-size: 3rem;
         }
+
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+
+        input {
+            width: calc(100% - 2rem);
+            height: 3rem;
+            padding: 0 1rem;
+            border: 1px solid #1E1E1E;
+            border-radius: 0.2rem;
+
+        }
+
+        button {
+            color: var(--clr-action_btn);
+            font-size: 1.3rem;
+            height: 3rem;
+            width: 100%;
+            text-decoration: none;
+            background-color: var(--bg-action-btn);
+            border: 1px solid #1E1E1E;
+            border-radius: 0.2rem; 
+            cursor: pointer;
+        }
+        
     }
 
 }
@@ -587,3 +578,274 @@ footer {
     }
 
 }
+
+/* login page styling */
+
+.login_section {
+    display: flex;
+    width: calc(100% - 20rem);
+    height: calc(100svh - 10rem);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: var(--clr-primary);
+    background-color: #FFFFFF;
+
+    .login_general_div {
+        display: inherit;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 22rem;
+        gap: 2rem;
+        
+        h1 {
+            font-size: 3rem;
+
+            + div {
+                display: flex;
+                /* gap: 1rem; */
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid #1E1E1E;
+                
+                .health_explorer_lg {
+                    color: var(--clr-secondary);
+                    font-size: 1rem;
+                    background-color: #1E1E1E;
+                    width: 100%;
+                    text-align: center;
+                    padding: 1rem;
+                    border-radius: 0.5rem 0.5rem 0 0;
+                }
+
+                .health_partner_lg {
+                    color: var(--clr-primary);
+                    font-size: 1rem;
+                    background-color: unset;
+                    width: 100%;
+                    text-align: center;
+                    padding: 1rem;
+                    border-radius: 0.5rem 0.5rem 0 0;                 
+                }
+            }
+
+        }
+
+        #health_explorer_form {
+            display: flex;
+            width: 100%;
+
+            .health_explorer_div {
+                display: flex;
+                flex-direction: column;
+                width: inherit;
+                gap: 1rem;
+
+                input {
+                    width: calc(100% - (2rem));
+                    height: 3rem;
+                    padding: 0 1rem;
+                    border: 1px solid #1E1E1E;
+                    border-radius: 0.2rem;
+                }
+
+                button {
+                    color: var(--clr-action_btn);
+                    font-size: 1.3rem;
+                    height: 3rem;
+                    width: 100%;
+                    text-decoration: none;
+                    background-color: var(--bg-action-btn);
+                    border: 1px solid #1E1E1E;
+                    border-radius: 0.2rem; 
+                    cursor: pointer;
+                }  
+
+            }
+        }
+
+        #health_partner_form {
+            display: none;
+            width: 100%;
+
+            .health_partner_div {
+                display: flex;
+                flex-direction: column;
+                width: inherit;
+                gap: 1rem;
+
+                input {
+                    width: calc(100% - (2rem));
+                    height: 3rem;
+                    padding: 0 1rem;
+                    border: 1px solid #1E1E1E;
+                    border-radius: 0.2rem;
+                }
+
+                button {
+                    color: var(--clr-action_btn);
+                    font-size: 1.3rem;
+                    height: 3rem;
+                    width: 100%;
+                    text-decoration: none;
+                    background-color: var(--bg-action-btn);
+                    border: 1px solid #1E1E1E;
+                    border-radius: 0.2rem; 
+                    cursor: pointer;
+                }  
+
+            }        
+        }
+
+        a {
+            font-size: 1rem;
+            color: var(--bg-action-btn);
+            text-decoration: none;
+    
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+    }
+}
+
+/*  */
+
+/* signup page styling */
+
+.sign_up_section {
+    display: flex;
+    width: calc(100% - 20rem);
+    height: calc(100svh - 10rem);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: var(--clr-primary);
+    background-color: #FFFFFF;
+
+    .sign_up_general_div {
+        display: inherit;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 22rem;
+        gap: 2rem;
+        
+        h1 {
+            font-size: 3rem;
+
+            + div {
+                display: flex;
+                /* gap: 1rem; */
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid #1E1E1E;
+                
+                .health_explorer_sp {
+                    color: var(--clr-secondary);
+                    font-size: 1rem;
+                    background-color: #1E1E1E;
+                    width: 100%;
+                    text-align: center;
+                    padding: 1rem;
+                    border-radius: 0.5rem 0.5rem 0 0;
+                }
+
+                .health_partner_sp {
+                    color: var(--clr-primary);
+                    font-size: 1rem;
+                    background-color: unset;
+                    width: 100%;
+                    text-align: center;
+                    padding: 1rem;
+                    border-radius: 0.5rem 0.5rem 0 0;                 
+                }
+            }
+        } 
+        
+        #health_explorer_form_sp {
+            display: flex;
+            width: 100%;
+
+            .health_explorer_details_sp {
+                display: flex;
+                flex-direction: column;
+                width: inherit;
+                gap: 1rem;
+
+                input {
+                    width: calc(100% - (2rem));
+                    height: 3rem;
+                    padding: 0 1rem;
+                    border: 1px solid #1E1E1E;
+                    border-radius: 0.2rem;
+                }
+
+                button {
+                    color: var(--clr-action_btn);
+                    font-size: 1.3rem;
+                    height: 3rem;
+                    width: 100%;
+                    text-decoration: none;
+                    background-color: var(--bg-action-btn);
+                    border: 1px solid #1E1E1E;
+                    border-radius: 0.2rem; 
+                    cursor: pointer;
+                }  
+            }    
+        }
+    }   
+
+    #health_partner_form_sp {
+        display: none;
+        width: 100%;
+
+        .health_partner_details_sp {
+            display: flex;
+            flex-direction: column;
+            width: inherit;
+            gap: 1rem;
+
+            input {
+                width: calc(100% - (2rem));
+                height: 3rem;
+                padding: 0 1rem;
+                border: 1px solid #1E1E1E;
+                border-radius: 0.2rem;
+            }
+
+            button {
+                color: var(--clr-action_btn);
+                font-size: 1.3rem;
+                height: 3rem;
+                width: 100%;
+                text-decoration: none;
+                background-color: var(--bg-action-btn);
+                border: 1px solid #1E1E1E;
+                border-radius: 0.2rem; 
+                cursor: pointer;
+            }  
+
+        }   
+             
+    }
+
+
+    a {
+        font-size: 1rem;
+        color: var(--bg-action-btn);
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+}
+
+/*  */

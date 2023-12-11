@@ -15,48 +15,55 @@
 
         <nav aria-label="primary navigation" class="primary_nav">
             <ul>
-                <li><a href="/index">Home</a></li>
-                <li><a href="about">About us</a></li>
-                <li><a href="blogs">Blogs</a></li>
-                <li><a href="contact">Contact us</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="#contact">Contact us</a></li>
             </ul>
         </nav>
 
         <nav aria-label="secondary navigation with login and sign up" class="secondary_nav">
             <ul>
-                <li><a href="/login">Login</a></li>
-                <li><a href="/sign_up">Get Started</a></li>
+                <li><a href="/login.html">Login</a></li>
+                <li><a href="#" class="nav_get_started_btn">Get Started</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>Get Started</h1>
+    <section class="sign_up_section">
+        <div class="sign_up_general_div">
+            <h1>Get Started</h1>
 
-        <div>
             <div>
-                <h4>Health Explorers</h4>
-                <h4>Health Partners</h4>
+                <h4 class="health_explorer_sp">Health Explorers</h4>
+                <h4 class="health_partner_sp">Health Partners</h4>
             </div>
-            <form action="" id="health_explorer_form">
-                <input type="text" name="first_name" class="first_name" placeholder="First name">
-                <input type="text" name="last_name" class="last_name" placeholder="Last name">
-                <input type="number" name="phone_number" class="phone_number" placeholder="Phone number">
-                <input type="email" name="email" class="email" placeholder="Email">
-                <input type="password" name="password" class="password" placeholder="Password">
-                <input type="password" name="confirm_password" class="confirm_password" placeholder="Confirm Password">
-                <button type="submit" class="sign_up_submit_btn">Sign Up</button>
+
+            <form action="" id="health_explorer_form_sp">
+                <div class="health_explorer_details_sp">
+                    <input type="text" name="first_name" class="first_name" placeholder="First name">
+                    <input type="text" name="last_name" class="last_name" placeholder="Last name">
+                    <input type="tel" name="phone_number" class="phone_number" placeholder="Phone number">
+                    <input type="email" name="email" class="email" placeholder="Email">
+                    <input type="password" name="password" class="password" placeholder="Password">
+                    <input type="password" name="confirm_password" class="confirm_password" placeholder="Confirm Password">
+                    <button type="submit" class="sign_up_submit_btn">Sign Up</button>
+                </div>
             </form>
-            <form action="" id="health_partner_form">
-                <input type="text" name="first_name" class="first_name" placeholder="First name">
-                <input type="text" name="last_name" class="last_name" placeholder="Last name">
-                <input type="number" name="phone_number" class="phone_number" placeholder="Phone number">
-                <input type="email" name="email" class="email" placeholder="Email">
-                <input type="password" name="password" class="password" placeholder="Password">
-                <input type="password" name="confirm_password" class="confirm_password" placeholder="Confirm Password">
-                <button type="submit" class="sign_up_submit_btn">Sign Up</button>
+
+            <form action="" id="health_partner_form_sp">
+                <div class="health_partner_details_sp">
+                    <input type="text" name="first_name" class="first_name" placeholder="First name">
+                    <input type="text" name="last_name" class="last_name" placeholder="Last name">
+                    <input type="tel" name="phone_number" class="phone_number" placeholder="Phone number">
+                    <input type="email" name="email" class="email" placeholder="Email">
+                    <input type="password" name="password" class="password" placeholder="Password">
+                    <input type="password" name="confirm_password" class="confirm_password" placeholder="Confirm Password">
+                    <button type="submit" class="sign_up_submit_btn">Sign Up</button>
+                </div>
             </form>
-            <p>Have an account?  <a href="/login.html"><strong>Login</strong></a></p>
+
+            <a href="/login.html">Have an account?  <strong>Login</strong></a>
         </div>
     </section>
 
