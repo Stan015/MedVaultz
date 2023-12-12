@@ -12,33 +12,33 @@
 </head>
 <body>
     <header>
-        <a href="#" aria-labelledby="MedVaultz logo" class="logo">MedVaultz</a>
-
-        <nav aria-label="primary navigation" class="primary_nav">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="#contact">Contact us</a></li>
-            </ul>
-        </nav>
-
-        <nav aria-label="secondary navigation with login and sign up" class="secondary_nav">
-            <ul>
-                <li><a href="/login.html">Login</a></li>
-                <li><a href="/sign_up.html" class="nav_get_started_btn">Get Started</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero_section">
         <div>
-            <h1>Empowering Your Health, Your way.</h1>
-            <p>Transform your healthcare with MedVaultz: Secure, private, and accessible health records in your hands.</p>
-            
-            <a href="/sign_up" class="get_started_btn">Get Started</a>
+            <a href="#" aria-labelledby="MedVaultz logo" class="logo">MedVaultz</a>
+            <nav aria-label="primary navigation" class="primary_nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+            <nav aria-label="secondary navigation with login and sign up" class="secondary_nav">
+                <ul>
+                    <li><a href="/login.html">Login</a></li>
+                    <li><a href="/sign_up.html" class="nav_get_started_btn">Get Started</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
+
+        <section class="hero_section">
+            <div>
+                <h1>Empowering Your Health, Your way.</h1>
+                <p>Transform your healthcare with MedVaultz: Secure, private, and accessible health records in your hands.</p>
+                
+                <a href="/sign_up" class="get_started_btn">Get Started</a>
+            </div>
+        </section>
+    </header>
 
     <main>
         <section class="why_medvaultz">
@@ -191,9 +191,9 @@
             <h2>Contact Us</h2>
             <p>Please fill out the contact form below and we will get back to you as soon as below.</p>    
 
-            <input type="text" name="full_name" placeholder="Full name" id="full_name" required>
-            <input type="tel" name="phone_number" id="phone_number" placeholder="Phone number">
-            <input type="email" name="email" id="email" placeholder="Email" required>
+            <input type="text" name="full_name" placeholder="Full name" id="full_name" aria-label="Full name" required>
+            <input type="tel" name="phone_number" id="phone_number" placeholder="Phone number" aria-label="Phone number">
+            <input type="email" name="email" id="email" placeholder="Email" aria-label="email" required>
 
             <button type="submit" id="send_msg_btn">Send</button>
         </form>
