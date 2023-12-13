@@ -184,10 +184,33 @@ exports.restrictTo = (...roles) => {
 
 exports.createDID = catchAsync(async (req, res, next) => {
   const { _id, role } = req.user;
+  const { domain } = req.body;
 
-  ({ web5, did: userDid } = await Web5.connect());
+  let options;
+
+  if (domain)
+    options = {
+      techPreview: {
+        dwnEndpoints: [domain],
+      },
+    }(({ web5, did: userDid } = await Web5.connect(options)));
 
   const patient = role === 'patient';
+
+  const user = await User.findOne({ _id, role: 'patient' });
+
+  user.userDid = userDid;
+  await user.save();
+
+  console.log({ user });
+
+  res.status(200).json({
+    status: 'success',
+    message: `Your newly created DID is ${userDid}`,
+    data: {
+      user,
+    },
+  });
 });
 
-exports.sendPhoneToken = catchAsync(async (req, res, next) => {});
+// exports.sendPhoneToken = catchAsync(async (req, res, next) => {});
