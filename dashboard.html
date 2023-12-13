@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;700&family=Prata&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <title>MedVaultz Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css"></head>
+<body>
+    <header>
+        <a href="#" class="logo">MedVaultz</a>
+
+        <div class="general_div">
+            <nav class="primary_db_nav">
+                <a href="#"><img src="/icons/home.svg" alt="home_icon">Dashboard</a>
+                <a href="#"><img src="/icons/message.svg" alt="message icon">Consult a Doctor</a>
+                <a href="#"><img src="icons/calendar.svg" alt="calendar icon">Appointments</a>
+                <a href="#"><img src="icons/file.svg" alt="file icon">Medical History</a>
+                <a href="#"><img src="/icons/health-plus.svg" alt="hospital plus icon">My Hospitals</a>
+            </nav>
+            <nav class="secondary_db_nav">
+                <a href="#"><img src="/icons/settings.svg" alt="settings icon">Settings</a>
+                <a href="#"><img src="icons/headset.svg" alt="headset icon">Help Center</a>
+                <a href="#"><img src="/icons/gift.svg" alt="gift icon">Refer family & friends</a>
+            </nav>
+            <div class="user_logout">
+                <div class="user_img">
+                    <img src="/images/dr_d.jpeg" alt="user photo">
+                    <div class="user_active_status"></div>
+                </div>
+                <div class="user_details">
+                    <h5 class="user_full_name">David Fayemi</h5>
+                    <p class="user_name">David@rayna.ui</p>
+                </div>
+                <a href="#" class="log_out_link"><img src="/icons/sign-out.svg" alt="sign out icon"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="search_div">
+            <div class="search_div_child_1">
+                <img src="/icons/search.svg" alt="search icon">
+                <input type="search" name="search" id="search" placeholder="Search here">
+            </div>
+
+            <div class="search_div_child_2">
+                <img src="/icons/bell.svg" alt="bell icon" class="bell_icon">
+                <img src="/images/dr_d.jpeg" alt="user photo">
+            </div>
+        </div>
+
+        <div class="general_div">
+            <div class="first_child">
+                <div class="greetings_div">
+                    <h2 class="welcome">Welcome David</h2>
+                    <p class="weather">It’s a sunny day today, we hope you’re taking good care of your health 😊</p>
+                </div>
+
+                <div class="date_div">
+                    <img src="/icons/calendar_2.svg" alt="calendar icon">
+                    <div class="date">
+                        <h6>Today’s Date</h6>
+                        <p>1st July, 2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="second_child">
+                <div class="blood_group"></div>
+                <div class="cholestrol_level"></div>
+                <div class="glucose_level"></div>
+                <div class="profile"></div>
+            </div>
+
+            <div class="third_child">
+                <h2>Upcoming Consultations</h2>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="fourth_child">
+                <h2>Quick Actions</h2>
+
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="fifth_child">
+                <div>
+                    <h2>Recent Consultations</h2>
+                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="/script.js"></script>
+</body>
+</html>

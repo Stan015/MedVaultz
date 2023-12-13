@@ -39,15 +39,25 @@ header {
     background-image: none;
     background-color: #FFFFFF;
 }
- 
+
+.header_general_div {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: inherit;
+    background-color: rgba(24, 24, 24, 0.50);
+    /* position: relative; */
+    align-items: center;
+}
+
 /* homepage links */
 header a {
     color: #FFFFFF;
     width: max-content;
     text-decoration: none;
     padding: 1rem 1.5rem;
-    border-radius: 0.2rem;
-    text-shadow: 0.5px 0.5px #000000;
+    border-radius: 0.5rem;
+    /* text-shadow: 0.5px 0.5px #000000; */
 }
 
 header a:hover {
@@ -105,18 +115,18 @@ nav ul li {
 .nav_get_started_btn {
     color: var(--clr-action_btn);
     background-color: var(--bg-action-btn);
-    /* margin-right: 10rem; */
+    transition: 200ms ease-in;
 }
 
 .nav_get_started_btn:hover {
     text-decoration: none;
+    background-color: #000000;
 }
 /*  */
 
 /* other page get started link */
 .other_pg_nav_get-started {
     color: #FFFFFF !important;
-    text-shadow: none !important;
 }
 
 .hero_section {
@@ -138,12 +148,11 @@ nav ul li {
     height: inherit;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .hero_section div h1 {
     font-size: 5rem;
-    text-shadow: 0.5px 0.5px #000000;
 }       
 
 .hero_section div p {
@@ -151,7 +160,6 @@ nav ul li {
     width: 56rem;
     text-align: center;
     line-height: 2rem;
-    text-shadow: 0.5px 0.5px #000000;
 }
 
 .hero_section div .get_started_btn {
@@ -160,7 +168,14 @@ nav ul li {
     text-decoration: none;
     background-color: var(--bg-action-btn);
     padding: 1.3rem 3rem;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
+    margin: 2rem 0;
+    transition: 200ms ease-in;
+}
+
+.hero_section div .get_started_btn:hover {
+    background-color: #000000;
+    transform: translate(5%, -5%);
 
 }
 
@@ -255,6 +270,7 @@ main .features {
 .features_img {
     width: 34rem;
     height: inherit;
+    border-radius: 0.5rem;
 }
 
 .main_last_div {
@@ -293,7 +309,13 @@ main .features {
     text-decoration: none;
     background-color: var(--bg-action-btn);
     padding: 1.3rem 3rem;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
+    transition: 200ms ease-in;
+}
+
+.main_last_div .layer .get_started_btn:hover {
+    background-color: #000000;
+    transform: translate(5%, -5%);
 }
 
 .blog_posts {
@@ -345,6 +367,7 @@ main .features {
     width: 20rem;
     height: 14rem;
     background-color: #ECECEC;
+    border-radius: 0.5rem;
 }
 
 .blog_posts .view_more_blogs {
@@ -354,7 +377,14 @@ main .features {
     justify-content: center;
     padding: 1.25rem 3.3rem;
     border: 1px solid #1E1E1E;
+    border-radius: 0.5rem;
     gap: unset;
+    transition: 200ms ease-in;
+}
+
+.blog_posts .view_more_blogs:hover {
+    border-color: #008000;
+    transform: translate(5%, -5%);
 }
 
 .blog_posts .view_more_arrow {
@@ -393,6 +423,7 @@ main .features {
     width: 21rem;
     height: 22rem;
     background-color: #ECECEC;
+    border-radius: 0.5rem;
 }
 
 .about_general_div .arrow_backward {
@@ -435,10 +466,11 @@ main .features {
     border: 1px solid #1E1E1E;
     padding: 1rem 0;
     cursor: pointer;
+    border-radius: 0.5rem;
 }
 
 .faq_section div:hover, .faq_section div:focus {
-    border: 1px solid green;
+    border: 1px solid #008000;
 }
 
 .faq_section div span {
@@ -506,8 +538,12 @@ main .features {
     height: 3rem;
     padding: 0 1rem;
     border: 1px solid #1E1E1E;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
 
+}
+
+.contact_section form input:hover {
+    border-color: #008000;
 }
 
 .contact_section form .message_label {
@@ -521,7 +557,11 @@ main .features {
     height: 3rem;
     padding: 0 1rem;
     border: 1px solid #1E1E1E;
-    border-radius: 0.2rem;  
+    border-radius: 0.5rem;  
+}
+
+.contact_section form #message:hover {
+    border-color: #008000;
 }
 
 .contact_section form button {
@@ -532,8 +572,13 @@ main .features {
     text-decoration: none;
     background-color: var(--bg-action-btn);
     border: 1px solid #1E1E1E;
-    border-radius: 0.2rem; 
+    border-radius: 0.5rem; 
     cursor: pointer;
+    transition: 200ms ease-in;
+}
+
+.contact_section form button:hover {
+    background-color: #000000;
 }
 
 footer {
@@ -542,7 +587,7 @@ footer {
     width: inherit;
     padding: 7rem 0;
     color: var(--clr-secondary);
-    background-color: #000000;
+    background-color: #001F3F;
 }
 
 footer a {
@@ -708,7 +753,11 @@ footer a:hover {
     height: 3rem;
     padding: 0 1rem;
     border: 1px solid #1E1E1E;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+#health_explorer_form_lg .health_explorer_div input:hover {
+    border-color: #008000;
 }
 
 #health_explorer_form_lg .health_explorer_div button {
@@ -719,8 +768,13 @@ footer a:hover {
     text-decoration: none;
     background-color: var(--bg-action-btn);
     border: 1px solid #1E1E1E;
-    border-radius: 0.2rem; 
+    border-radius: 0.5rem; 
     cursor: pointer;
+    transition: 200ms ease-in;
+}  
+
+#health_explorer_form_lg .health_explorer_div button:hover {
+    background-color: #000000;
 }  
 
 #health_partner_form_lg {
@@ -740,7 +794,11 @@ footer a:hover {
     height: 3rem;
     padding: 0 1rem;
     border: 1px solid #1E1E1E;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+#health_partner_form_lg .health_partner_div input:hover {
+    border-color: #008000;
 }
 
 #health_partner_form_lg .health_partner_div button {
@@ -751,8 +809,13 @@ footer a:hover {
     text-decoration: none;
     background-color: var(--bg-action-btn);
     border: 1px solid #1E1E1E;
-    border-radius: 0.2rem; 
+    border-radius: 0.5rem; 
     cursor: pointer;
+    transition: 200ms ease-in;
+}  
+
+#health_partner_form_lg .health_partner_div button:hover {
+    background-color: #000000;
 }  
 
 .login_general_div a {
@@ -821,7 +884,8 @@ footer a:hover {
     text-align: center;
     padding: 1rem;
     border-radius: 0.5rem 0.5rem 0 0; 
-    cursor: pointer;                                 
+    cursor: pointer; 
+    transition: 200ms ease-in-out;                                
 }
 
 #health_explorer_form_sp {
@@ -841,7 +905,11 @@ footer a:hover {
     height: 3rem;
     padding: 0 1rem;
     border: 1px solid #1E1E1E;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.health_explorer_details_sp input:hover {
+    border-color: #008000;
 }
 
 .health_explorer_details_sp button {
@@ -852,8 +920,13 @@ footer a:hover {
     text-decoration: none;
     background-color: var(--bg-action-btn);
     border: 1px solid #1E1E1E;
-    border-radius: 0.2rem; 
+    border-radius: 0.5rem; 
     cursor: pointer;
+    transition: 200ms ease-in;
+} 
+
+.health_explorer_details_sp button:hover {
+    background-color: #000000;
 } 
 
 #health_partner_form_sp {
@@ -873,7 +946,11 @@ footer a:hover {
     height: 3rem;
     padding: 0 1rem;
     border: 1px solid #1E1E1E;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.health_partner_details_sp input:hover {
+    border-color: #008000;
 }
 
 .health_partner_details_sp button {
@@ -884,8 +961,13 @@ footer a:hover {
     text-decoration: none;
     background-color: var(--bg-action-btn);
     border: 1px solid #1E1E1E;
-    border-radius: 0.2rem; 
+    border-radius: 0.5rem; 
     cursor: pointer;
+    transition: 200ms ease-in;
+}    
+
+.health_partner_details_sp button:hover {
+    background-color: #000000;
 }    
 
 .sign_up_general_div a {
