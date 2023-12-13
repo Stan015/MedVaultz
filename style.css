@@ -1,9 +1,9 @@
 :root {
-    --clr-primary: #1E1E1E;
+    --clr-primary: #001F3F;
     --clr-secondary: #FFFFFF;
     --clr-action_btn: #FFFFFF;
 
-    --bg-action-btn: #1E1E1E;
+    --bg-action-btn: #001F3F;
 }
 
 * {
@@ -18,33 +18,46 @@ body {
     scroll-behavior: smooth;
 }
 
+/* homepage header */
 header {
-    display: block;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: inherit;
     height: 100svh;
     /* position: relative; */
     background-image: url(/images//hero_bg.png);
     background-repeat: no-repeat;
-    padding: 0 10rem;
-    justify-content: space-between;
+    background-position: -40% 100%;
+    background-size: cover;
     align-items: center;
-    z-index: 4;
-    flex-shrink: 0;
-    margin: 0 auto;
-
 }
+/*  */
 
-
+/* other pages header */
+.other_page_header {
+    height: 10rem;
+    background-image: none;
+    background-color: #FFFFFF;
+}
+ 
+/* homepage links */
 header a {
-    color: #000000;
+    color: #FFFFFF;
     width: max-content;
     text-decoration: none;
     padding: 1rem 1.5rem;
     border-radius: 0.2rem;
+    text-shadow: 0.5px 0.5px #000000;
 }
 
 header a:hover {
     text-decoration: underline;
+}
+/*  */
+
+/* other pages header links */
+.other_page_header a {
+    color: #001F3F;
 }
 
 header .logo {
@@ -57,9 +70,21 @@ header .logo:hover {
     text-decoration: none;
 }
 
+header .links_div {
+    display: flex;
+    position: relative;
+    width: calc(100% - 20rem);
+    height: 10rem;
+    padding: 0 10rem;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 4;
+    /* flex-shrink: 0; */
+    margin: 0 auto;}
+
 nav {
     color: var(--clr-primary);
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-family: 'Inter', sans-serif;
 }
 
@@ -76,6 +101,7 @@ nav ul li {
     width: max-content;
 }
 
+/* homepage get started */
 .nav_get_started_btn {
     color: var(--clr-action_btn);
     background-color: var(--bg-action-btn);
@@ -85,14 +111,21 @@ nav ul li {
 .nav_get_started_btn:hover {
     text-decoration: none;
 }
+/*  */
+
+/* other page get started link */
+.other_pg_nav_get-started {
+    color: #FFFFFF !important;
+    text-shadow: none !important;
+}
 
 .hero_section {
     display: flex;
-    color: var(--clr-primary);
+    color: #FFFFFF;
+    position: relative;
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    /* background-color: #ECECEC; */
     justify-content: center;
     align-items: center;
 
@@ -101,25 +134,24 @@ nav ul li {
 .hero_section div {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    /* position: relative; */
-    top: -5rem;
-    /* background-color: #ECECEC; */
+    width: inherit;
+    height: inherit;
     justify-content: center;
     align-items: center;
     gap: 3rem;
 }
 
 .hero_section div h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+    text-shadow: 0.5px 0.5px #000000;
 }       
 
 .hero_section div p {
-    font-size: 1.25rem;
-    width: 47rem;
+    font-size: 1.7rem;
+    width: 56rem;
     text-align: center;
     line-height: 2rem;
+    text-shadow: 0.5px 0.5px #000000;
 }
 
 .hero_section div .get_started_btn {
@@ -173,12 +205,9 @@ main .why_medvaultz h2 + div div {
 main .why_medvaultz h2 + div div .number {
     width: 4rem;
     height: 4rem;
-    text-align: center;
-    line-height: 4rem;
-    border: 0.4px solid #1E1E1E;
-    border-radius: 50%;
-    font-size: 2rem;
-    font-weight: 500;
+    background-color: #DBE0F0;
+    border-radius: 1.5rem;
+    padding: 1rem;
 }
 
 main .why_medvaultz h2 + div div .number + p {
@@ -223,28 +252,42 @@ main .features {
     font-size: 1.25rem;
 }
 
-.to_be_changed {
+.features_img {
     width: 34rem;
     height: inherit;
-    background-color: #ECECEC;
 }
 
-.features_last_div {
+.main_last_div {
+    display: flex;
+    width: calc(100% + 20rem);
+    height: 18rem;
+    background-image: url(/images/take_charge.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    justify-self: center;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+}
+.main_last_div .layer {
     display: flex;
     flex-direction: column;
-    height: 18rem;
-    background-color: #ECECEC;
+    background-color: rgba(0, 31, 63, 0.48);
+    width: 100%;
+    height: 100%;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.features_last_div p {
+.main_last_div .layer p {
+    color: #FFFFFF;
     font-size: 2rem;
-    padding: 0 10%;
+    width: 50rem;
     text-align: center;
 }
 
-.features_last_div .get_started_btn {
+.main_last_div .layer .get_started_btn {
     color: var(--clr-action_btn);
     font-size: 2rem;
     text-decoration: none;
@@ -298,7 +341,7 @@ main .features {
     font-size: 0.8rem;
 }
 
-.blog_posts a div {
+.blog_posts a img {
     width: 20rem;
     height: 14rem;
     background-color: #ECECEC;
@@ -312,6 +355,12 @@ main .features {
     padding: 1.25rem 3.3rem;
     border: 1px solid #1E1E1E;
     gap: unset;
+}
+
+.blog_posts .view_more_arrow {
+    width: unset;
+    height: unset;
+    background-color: unset;
 }
 
 .about_section {
@@ -428,7 +477,9 @@ main .features {
 .contact_section .first_child_div {
     width: 34rem;
     height: 35rem;
-    background-color: #ECECEC;
+    background-image: url(/images/doctors.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .contact_section form {
@@ -457,6 +508,20 @@ main .features {
     border: 1px solid #1E1E1E;
     border-radius: 0.2rem;
 
+}
+
+.contact_section form .message_label {
+    color: #001F3F;
+    /* width: 100%; */
+    /* margin-left: 2rem; */
+}
+
+.contact_section form #message {
+    width: calc(100% - 2rem);
+    height: 3rem;
+    padding: 0 1rem;
+    border: 1px solid #1E1E1E;
+    border-radius: 0.2rem;  
 }
 
 .contact_section form button {
@@ -607,7 +672,7 @@ footer a:hover {
 .login_general_div h1 + div .health_explorer_lg {
     color: var(--clr-secondary);
     font-size: 1rem;
-    background-color: #1E1E1E;
+    background-color: #001F3F;
     width: 100%;
     text-align: center;
     padding: 1rem;
@@ -734,13 +799,13 @@ footer a:hover {
     width: 100%;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid #1E1E1E;
+    border-bottom: 1px solid #001F3F;
 }
 
 .sign_up_general_div h1 + div .health_explorer_sp {
     color: var(--clr-secondary);
     font-size: 1rem;
-    background-color: #1E1E1E;
+    background-color: #001F3F;
     width: 100%;
     text-align: center;
     padding: 1rem;

@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <div>
+        <div class="links_div">
             <a href="#" aria-labelledby="MedVaultz logo" class="logo">MedVaultz</a>
             <nav aria-label="primary navigation" class="primary_nav">
                 <ul>
@@ -46,17 +46,17 @@
 
             <div>
                 <div>
-                    <p class="number">1</p>
+                    <img src="/images/circle_lock_check_02.svg" alt="icon for secure and decentrilized" class="number">
                     <p>Secure and Decentralized Storage</p>
                 </div>
 
                 <div>
-                    <p class="number">2</p>
+                    <img src="/images/user_shield_01.svg" alt="icon for data control" class="number">
                     <p>Total Data Control</p>
                 </div>
 
                 <div>
-                    <p class="number">3</p>
+                    <img src="/images/user_settings_01.svg" alt="icon for Seamless Interoperability and insights" class="number">
                     <p>Seamless Interoperability and Insights</p>
                 </div>
             </div>
@@ -69,11 +69,11 @@
                     <h2>MedVaultz Security Vault</h2>
                     <p>Your health records, fortified by blockchain technology, are securely stored in your personal MedVaultz.</p>
                 </div>
-                <div class="to_be_changed"></div>
+                <img src="/images/security.png" alt="heart with a key to represent security" class="features_img">
             </div>
             
             <div  class="features_list">
-                <div class="to_be_changed"></div>
+                <img src="/images/personalized.png" alt="a finger pointing at a control to represent personalized" class="features_img">
                 <div class="features_list_text">
                     <h2>Personalized Control</h2>
                     <p>With cryptographic key permissions, you dictate who has access to your health data, ensuring unparalleled privacy and control.</p>
@@ -84,20 +84,23 @@
                     <h2>Seamless Health Insights</h2>
                     <p>Break down data silos with MedVaultz, facilitating smooth data exchange among healthcare providers for a holistic view of your health history.</p>
                 </div>
-                <div class="to_be_changed"></div>
+                <img src="/images/seamless.png" alt="people sitting a looing a text which says Healthy Living" class="features_img">
             </div>
             <div  class="features_list">
-                <div class="to_be_changed"></div>
+                <img src="images/empowering.png" alt="a text that says Health" class="features_img">
                 <div class="features_list_text">
                     <h2>Empowering Your Decisions</h2>
                     <p>Gain actionable insights into your health trends and history, empowering you to make informed decisions about your well-being.</p>
                 </div>
             </div>
-            <div class="features_last_div">
+        </section>
+
+        <div class="main_last_div">
+            <div class="layer">
                 <p>Take charge of your health journey. Your MedVaultz, your health, your control.</p>
                 <a href="/sign_up" class="get_started_btn">Get Started</a>
             </div>
-        </section>
+        </div>
     </main>
     
     <section class="blog_posts" id="blogs">
@@ -110,7 +113,7 @@
                 <p>Dec  01, 2023</p>
             </span>
 
-            <div></div>
+            <img src="/images/blog_1.png" alt="two persons wearing VR headset">
         </a>
 
         <a href="#">
@@ -120,7 +123,7 @@
                 <p>Dec  01, 2023</p>
             </span>
 
-            <div></div>
+            <img src="/images/blog_2.png" alt="a doctor holding Stethoscope">
         </a>
       
         <a href="#" class="view_more_blogs">View more <img src="/images/arrow_forward.svg" alt="arrow forward" class="arrow_forward view_more_arrow"></a>
@@ -194,6 +197,8 @@
             <input type="text" name="full_name" placeholder="Full name" id="full_name" aria-label="Full name" required>
             <input type="tel" name="phone_number" id="phone_number" placeholder="Phone number" aria-label="Phone number">
             <input type="email" name="email" id="email" placeholder="Email" aria-label="email" required>
+            <label for="message" class="message_label">Message</label>
+            <textarea name="message" id="message"></textarea>
 
             <button type="submit" id="send_msg_btn">Send</button>
         </form>
