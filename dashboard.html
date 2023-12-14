@@ -14,7 +14,7 @@
 
         <div class="general_div">
             <nav class="primary_db_nav">
-                <a href="#"><img src="/icons/home.svg" alt="home_icon">Dashboard</a>
+                <a href="#dashboard"><img src="/icons/home.svg" alt="home_icon">Dashboard</a>
                 <a href="#"><img src="/icons/message.svg" alt="message icon">Consult a Doctor</a>
                 <a href="#"><img src="icons/calendar.svg" alt="calendar icon">Appointments</a>
                 <a href="#"><img src="icons/file.svg" alt="file icon">Medical History</a>
@@ -27,7 +27,7 @@
             </nav>
             <div class="user_logout">
                 <div class="user_img">
-                    <img src="/images/dr_d.jpeg" alt="user photo">
+                    <img src="/images/dr_d.jpeg" alt="user photo" class="profile_pic">
                     <div class="user_active_status"></div>
                 </div>
                 <div class="user_details">
@@ -48,11 +48,11 @@
 
             <div class="search_div_child_2">
                 <img src="/icons/bell.svg" alt="bell icon" class="bell_icon">
-                <img src="/images/dr_d.jpeg" alt="user photo">
+                <img src="/images/dr_d.jpeg" alt="user photo" class="profile_pic">
             </div>
         </div>
 
-        <div class="general_div">
+        <div class="general_div" id="dashboard">
             <div class="first_child">
                 <div class="greetings_div">
                     <h2 class="welcome">Welcome David</h2>
@@ -69,36 +69,235 @@
             </div>
 
             <div class="second_child">
-                <div class="blood_group"></div>
-                <div class="cholestrol_level"></div>
-                <div class="glucose_level"></div>
-                <div class="profile"></div>
+                <div class="blood_group">
+                    <div class="sample_details">
+                        <div class="sample_div_1">
+                            <h6 class="name_of_sample">Blood pressure</h6>
+                            <p class="quantity"><strong>118/75</strong> mm/hg</p>
+                            <div class="chart_div">
+                                <div class="percentage"><img src="/icons/chart-up.svg" alt="chart up icon"> 5%</div>
+                                <p class="healthy">Healthy</p>
+                            </div>
+                        </div>
+                        
+                        <img src="/icons/thermometer.svg" alt="thermometer icon" class="sample_icon">
+                    </div>
+                </div>
+
+                <div class="cholestrol_level">
+                    <div class="sample_details">
+                        <div class="sample_div_1">
+                            <h6 class="name_of_sample">Cholesterol levels</h6>
+                            <p class="quantity"><strong>164</strong> mg/dl</p>
+                            <div class="chart_div">
+                                <div class="percentage"><img src="/icons/chart-up.svg" alt="chart up icon"> 5%</div>
+                                <p class="healthy">Healthy</p>
+                            </div>
+                        </div>
+                        
+                        <img src="/icons/3d.svg" alt="3d icon" class="sample_icon">
+                    </div>
+                </div>
+
+                <div class="glucose_level">
+                    <div class="sample_details">
+                        <div class="sample_div_1">
+                            <h6 class="name_of_sample">Glucose levels</h6>
+                            <p class="quantity"><strong>5.5</strong> mmol/L</p>
+                            <div class="chart_div">
+                                <div class="percentage"><img src="/icons/chart-up.svg" alt="chart up icon"> 5%</div>
+                                <p class="healthy">Healthy</p>
+                            </div>
+                        </div>
+                        
+                        <img src="/icons/sun.svg" alt="sun icon" class="sample_icon">
+                    </div>
+                </div>
+                <div class="profile">
+                    <h2>Your Profile</h2>
+
+                    <div class="user_profile_details">
+                        <div class="user_profile_div_1">
+                            <img src="/images/dr_d.jpeg" alt="user photo" class="profile_pic">
+                            <h5 class="user_full_name">David Fayemi</h5>
+                            <p class="user_reg_number">HMO ID: RET/15118/A</p>
+                        </div>
+
+                        <div class="user_profile_div_2">
+                            <div class="age">
+                                <h6>Age</h6>
+                                <p>26 y/o</p>
+                            </div>
+
+                            <div class="d_o_b">
+                                <h6>Date of Birth</h6>
+                                <p>15-05-1994</p>
+                            </div>
+
+                            <div class="height">
+                                <h6>Height</h6>
+                                <p>6”7 In</p>
+                            </div>
+
+                            <div class="weight">
+                                <h6>Weight</h6>
+                                <p>80 kg</p>
+                            </div>
+
+                            <div class="hmo_plan">
+                                <h6>HMO Plan</h6>
+                                <p>Red Beryl</p>
+                            </div>
+                            
+                            <div class="expiry_date">
+                                <h6>Expires on</h6>
+                                <p>24-07-2024</p>
+                            </div>
+
+                            <div class="user_active_status">
+                                <h6>Status</h6>
+                                <p>Active</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="third_child">
-                <h2>Upcoming Consultations</h2>
-                <div></div>
-                <div></div>
+                <h3>Upcoming Consultations</h3>
+
+                <div>
+                    <div class="consultation_date">
+                        <h5>Friday, 6 July</h5>
+                        <p><img src="/icons/clock.svg" alt="clock icon"> 11.30 - 12.00 (30 min)</p>
+                        <p><img src="/icons/calendar.svg" alt="calendar icon"> Cottage Medicare Hospital, 18 Iwaya Rd, Yaba 101245, Lagos</p>
+                    </div>
+
+                    <div class="consultant">
+                        <div class="profile_pic_div">
+                            <img src="/images/dr_A.png" alt="profile picture" class="consultant_img">
+                            <img src="/icons/check.svg" alt="check icon" class="check_icon">
+                        </div>
+
+                        <div>
+                            <p class="name_of_consultant">Dr. Alison Ogaga</p>
+                            <p class="consultant_title">General Practioner </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="action_buttons_div">
+                    <button type="submit" name="reschedule" id="reschedule">Reschedule</button>
+                    <button type="submit" name="confirm_appointment" id="confirm_appointment">Confirm appointment</button>
+                </div>
             </div>
 
             <div class="fourth_child">
-                <h2>Quick Actions</h2>
+                <div class="quick_action">
+                    <h3>Quick Actions</h3>
 
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+                    <div>
+                        <div>
+                            <img src="/icons/calendar.svg" alt="calendar icon" class="calendar_icon">
 
-            <div class="fifth_child">
-                <div>
-                    <h2>Recent Consultations</h2>
+                            <div>
+                                <div class="action">
+                                    <h5>Book an Appointment</h5>
+                                    <p>Find a doctor and specialization</p>
+                                </div>
+
+                                <img src="/icons/chevron-right.svg" alt="arrow forward">
+                            </div>
+
+                        </div>
+                        <div></div>
+                        <div></div>                        
+                    </div>
                 </div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+
+                <div class="recent_consultation">
+                    <div class="recent_c_div_1">
+                        <h3>Recent Consultations</h3>
+
+                        <a href="#" class="see_all">See all <img src="/icons/chevron-right.svg" alt="arrow forward"></a>
+                    </div>
+
+                    <div class="recent_c_div_2">
+                        <div class="recent_c_details">
+                            <div class="recent_c_profile_gen_div">
+                                <div class="recent_c_immediate_div">
+                                    <div class="recent_c_profile">
+                                        <img src="/images/dr_A.png" alt="profile picture" class="recent_user_img">
+                                        <div class="user_active_status"></div>
+                                    </div>
+                                    <div class="recent_c_title">
+                                        <h5 class="recent_c_name">Dr. Alison Ogaga</h5>
+                                        <p class="recent_c_profession">General Practioner </p>
+                                    </div>
+                                </div>
+
+                                <button type="submit" name="send_message" class="send_message">Send a message</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent_c_div_2">
+                        <div class="recent_c_details">
+                            <div class="recent_c_profile_gen_div">
+                                <div class="recent_c_immediate_div">
+                                    <div class="recent_c_profile">
+                                        <img src="/images/dr_J.png" alt="profile picture" class="recent_user_img">
+                                        <div class="user_active_status"></div>
+                                    </div>
+                                    <div class="recent_c_title">
+                                        <h5 class="recent_c_name">Dr.Jennifer Johnson</h5>
+                                        <p class="recent_c_profession">Primary Care Physician</p>
+                                    </div>
+                                </div>
+
+                                <button type="submit" name="send_message" class="send_message">Send a message</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent_c_div_2">
+                        <div class="recent_c_details">
+                            <div class="recent_c_profile_gen_div">
+                                <div class="recent_c_immediate_div">
+                                    <div class="recent_c_profile">
+                                        <img src="/images/dr_ani.png" alt="profile picture" class="recent_user_img">
+                                        <div class="user_active_status"></div>
+                                    </div>
+                                    <div class="recent_c_title">
+                                        <h5 class="recent_c_name">Dr. Anish Patel</h5>
+                                        <p class="recent_c_profession">General Practioner</p>
+                                    </div>
+                                </div>
+
+                                <button type="submit" name="send_message" class="send_message">Send a message</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent_c_div_2">
+                        <div class="recent_c_details">
+                            <div class="recent_c_profile_gen_div">
+                                <div class="recent_c_immediate_div">
+                                    <div class="recent_c_profile">
+                                        <img src="/images/dr_s.png" alt="profile picture" class="recent_user_img">
+                                        <div class="user_active_status"></div>
+                                    </div>
+                                    <div class="recent_c_title">
+                                        <h5 class="recent_c_name">Dr. Samuel Smith</h5>
+                                        <p class="recent_c_profession">Mental Health Professional</p>
+                                    </div>
+                                </div>
+
+                                <button type="submit" name="send_message" class="send_message">Send a message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>

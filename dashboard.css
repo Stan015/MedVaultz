@@ -75,9 +75,7 @@ header .general_div {
 }
 
 .primary_db_nav a:hover, 
-.primary_db_nav a:focus,
-.secondary_db_nav a:hover,
-.secondary_db_nav a:focus {
+.secondary_db_nav a:hover {
     border-radius: 0.5rem;
     background-color: #EBF5FF;
 }
@@ -166,9 +164,9 @@ main .search_div_child_2 {
 
 main .search_div_child_2 .bell_icon {
     display: block;
-    width: 1rem;
-    height: 1rem;
-    padding: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.8rem;
     border-radius: 50%;
     background-color: #F0F2F5;
 }
@@ -182,8 +180,8 @@ main .search_div_child_2 img {
 
 main .general_div {
     display: grid;
-    grid-template-columns: 1fr 20rem 1fr;
-    grid-template-rows: 6rem auto auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 6rem 25.5rem auto;
     height: 100%;
     width: calc(100% - 4rem);
     padding: 1rem 2rem;
@@ -191,7 +189,7 @@ main .general_div {
 }
 
 main .general_div .first_child {
-    grid-area: 1 / 1 / 1 / 4;
+    grid-area: 1 / 1 / 1 / 5;
     display: flex;
     height: 6rem;
     width: 100%;
@@ -223,9 +221,9 @@ main .general_div .first_child .date_div {
 
 main .general_div .first_child .date_div img {
     display: block;
-    width: 1rem;
-    height: 1rem;
-    padding: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.8rem;
     border-radius: 50%;
     background-color: #F0F2F5;
 }
@@ -238,12 +236,12 @@ main .general_div .first_child .date_div .date {
 
 main .general_div .second_child {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 7rem auto;
+    grid-template-columns: subgrid;
+    grid-template-rows: 8rem auto;
     height: 100%;
     width: 100%;
     gap: 1rem;
-    grid-area: 2 / 1 / 3 / 3;
+    grid-area: 2 / 1 / 3 / 4;
     border-radius: 1rem;
 }
 
@@ -274,38 +272,387 @@ main .general_div .second_child .glucose_level {
     border-radius: 1rem;
 }
 
+/* general sample contents style (blood pressure, cholesterol, and glucose_level */
+    .sample_details {
+        display: flex;
+        gap: 1rem;
+        width: calc(100% - 3rem);
+        height: calc(100% - 3rem);
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    .sample_details .sample_div_1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .sample_details .sample_div_1 .name_of_sample {
+        color: #475367;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .sample_details .sample_div_1 .quantity {
+        color: #475367;
+        font-size: 1rem;
+    }
+
+    .sample_details .sample_div_1 .quantity strong {
+        color: #000000;
+        font-size: 1.3rem;
+    }
+
+    .sample_details .sample_div_1 .chart_div {
+        display: flex;
+        gap: 1rem;
+        font-size: 0.8rem;
+        color: #008000;
+        align-items: center;
+    }
+
+    .sample_details .sample_div_1 .percentage {
+        display: inherit;
+        gap: 0.5rem;
+        background-color: #E7F6EC;
+        padding: 0.3rem;
+        border-radius: 2rem;
+        font-weight: 500;
+    }
+
+    .sample_details .sample_icon {
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        padding: 0.8rem;
+        border-radius: 50%;
+        border: 2px solid #F0F2F5;
+    }
+
+/*  */
+
+/* user profile */
 main .general_div .second_child .profile {
-    display: grid;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 16.5rem;
     width: 100%;
     grid-area: 2 / 1 / 2 / 4;
     background-color: #FFFFFF;
     border-radius: 1rem;
 }
 
-main .general_div .third_child {
+main .general_div .second_child h2 {
+    width: calc(100% - 1.5rem);
+    font-size: 1.3rem;
+    align-self: center;
+    margin-bottom: 1rem;
+    padding: 1.5rem 0 0 1.5rem;
+}
+
+.user_profile_details {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #E4E7EC;
+}
+
+.user_profile_div_1 {
+    display: flex;
+    flex-direction: column;
+    width: 28%;
+    justify-content: space-between;
+    flex-shrink: 0;
+    border-right: 2px solid #E4E7EC;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.user_profile_div_1 .profile_pic {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: relative;
+}
+
+.user_profile_div_1 .user_full_name {
+    font-size: 1rem;
+    width: 100%;
+}
+
+.user_profile_div_1 .user_reg_number {
+    font-size: 1rem;
+    width: 100%;
+    color: #475367;
+    padding-bottom: 2rem;
+}
+
+.user_profile_div_2  {
     display: grid;
-    grid-area: 2/ 3 / 2 / 4;
-    padding: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    width: calc(72% - 1.5rem);
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+    gap: 1.5rem;
+}
+
+.user_profile_div_2 div h6 {
+    font-size: 0.8rem;
+    color: #475367;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+}
+
+.user_profile_div_2 div p {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: 600;
+}
+
+/*  */
+
+main .general_div .third_child {
+    display: flex;
+    flex-direction: column;
+    grid-area: 2/ 4 / 2 / 5;
+    width: 100%;
+    height: 100%;
     background-color: #FFFFFF;
     border-radius: 1rem;
+    gap: 1rem;
+
+}
+
+.general_div .third_child h3 {
+    font-size: 1.3rem;
+    width: calc(100% - 3rem);
+    height: calc(5rem - 3rem);
+    border-bottom: 2px solid #E4E7EC;
+    padding: 1.5rem;
+}
+
+.general_div .third_child h3 + div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #E4E7EC;
+    justify-content: space-between;
+}
+
+.third_child h3 + div .consultation_date {
+    display: inherit;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 1.5rem;
+}
+
+.third_child h3 + div .consultation_date h5 {
+    font-size: 1.3rem;
+    height: 3rem;
+}
+
+.third_child h3 + div .consultation_date p {
+    font-size: 0.8rem;
+    color: #475367;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.third_child h3 + div .consultant {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.third_child h3 + div .consultant .profile_pic_div {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+}
+
+.third_child h3 + div .consultant .consultant_img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background-color: #FFE7CC;
+}
+
+.third_child h3 + div .consultant .check_icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    padding: 0.2rem;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #0000FF;
+    top: 70%;
+    right: 0;
+
+}
+
+.third_child .action_buttons_div {
+    width: calc(100% - 3rem);
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1.5rem 1.3rem 1.5rem;
+
+}
+
+.third_child .action_buttons_div #reschedule {
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 2px solid #E4E7EC;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.third_child .action_buttons_div #confirm_appointment {
+    width: 10rem;
+    height: 2rem;
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    background-color: #001F3F;
+    border: 2px solid #E4E7EC;
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 main .general_div .fourth_child {
-    display: grid;
-    grid-area: 3/ 1 / 3 / 2;
-    padding: 2rem;
+    display: flex;
+    grid-area: 3/ 1 / 3 / -1;
+
+    gap: 1rem;
+}
+
+.fourth_child .quick_action {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
     background-color: #FFFFFF;
     border-radius: 1rem;
 }
 
+.fourth_child .quick_action h3 {
+    font-size: 1.3rem;
+    width: calc(100% - 3rem);
+    height: calc(4rem - 3rem);
+    border-bottom: 2px solid #E4E7EC;
+    padding: 1.5rem;
+}
 
-main .general_div .fifth_child {
-    display: grid;
-    grid-area: 3/ 2 / 3 / -1;
-    padding: 2rem;
+.fourth_child .recent_consultation {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     background-color: #FFFFFF;
     border-radius: 1rem;
+
+}
+
+.recent_consultation .recent_c_div_1 {
+    display: flex;
+    font-size: 1.3rem;
+    width: calc(100% - 3rem);
+    height: calc(4rem - 3rem);
+    /* border-bottom: 2px solid #E4E7EC; */
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.recent_consultation .recent_c_div_1 h3 {
+    font-size: 1.3rem;
+
+}
+
+.recent_consultation .recent_c_div_1 a {
+    color: #475367;
+    text-decoration: none;
+    text-align: center;
+    transition: 200ms ease-in;
+}
+
+.recent_consultation .recent_c_div_1 a:hover {
+    border-bottom: 2px solid #E4E7EC;
+}
+
+/* recent consultations general style */
+.recent_consultation .recent_c_div_2 {
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+}
+
+.recent_c_details {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    border-top: 2px solid #E4E7EC;
 }
 
 
+.recent_c_profile_gen_div {
+    display: flex;
+    width: calc(100% - 3rem);
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.recent_c_immediate_div {
+    display: flex;
+    width: calc(100% - 3rem);
+    height: 5rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.recent_c_immediate_div .recent_c_profile {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    border-radius: 50%;
+}
+
+.recent_c_profile img {
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #FFE7CC;
+}
+
+.recent_c_profile .user_active_status {
+    display: block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: #008000;
+    position: absolute;
+    right: 0;
+    top: 70%;
+}
+
+.recent_c_profile_gen_div .send_message {
+    width: 10rem;
+    height: 2rem;
+}
+/*  */
