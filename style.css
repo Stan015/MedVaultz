@@ -24,14 +24,13 @@ header {
     flex-direction: column;
     width: inherit;
     height: 100svh;
-    /* position: relative; */
+    position: relative;
     background-image: url(/images//hero_bg.png);
     background-repeat: no-repeat;
-    background-position: -40% 100%;
     background-size: cover;
     align-items: center;
 }
-/*  */
+
 
 /* other pages header */
 .other_page_header {
@@ -50,8 +49,9 @@ header {
     align-items: center;
 }
 
-/* homepage links */
+/* homepage header links */
 header a {
+    display: inherit;
     color: #FFFFFF;
     width: max-content;
     text-decoration: none;
@@ -83,9 +83,9 @@ header .logo:hover {
 header .links_div {
     display: flex;
     position: relative;
-    width: calc(100% - 20rem);
+    width: calc(100% - 20%);
     height: 10rem;
-    padding: 0 10rem;
+    /* padding: 0 10rem; */
     justify-content: space-between;
     align-items: center;
     z-index: 4;
@@ -152,6 +152,7 @@ nav ul li {
 }
 
 .hero_section div h1 {
+    text-align: center;
     font-size: 5rem;
 }       
 
@@ -237,7 +238,7 @@ main .features {
     gap: 6rem;
     justify-content: center;
     align-items: center;
-    width: calc(100% - 20rem);
+    width: calc(100% - 20%);
 }
 
 .features_title {
@@ -275,7 +276,7 @@ main .features {
 
 .main_last_div {
     display: flex;
-    width: calc(100% + 20rem);
+    width: calc(100% + 20%);
     height: 18rem;
     background-image: url(/images/take_charge.png);
     background-size: cover;
@@ -321,7 +322,7 @@ main .features {
 .blog_posts {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 20rem);
+    width: calc(100% - 20%);
     margin: 0 auto;
     gap: 3rem;
     justify-content: center;
@@ -396,7 +397,7 @@ main .features {
 .about_section {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 20rem);
+    width: calc(100% - 20%);
     justify-content: center;
     align-items: center;
     align-self: center;
@@ -445,7 +446,7 @@ main .features {
 .faq_section {
     display: flex;
     flex-direction: column;
-    width: calc(100% - 20rem);
+    width: calc(100% - 20%);
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -501,7 +502,7 @@ main .features {
     align-items: center;
     padding: 4rem 0;
     margin: 0 auto;
-    width: calc(100% - 20rem);
+    width: calc(100% - 20%);
     color: var(--clr-primary);
 
 }
@@ -606,7 +607,7 @@ footer a:hover {
 
 .ftr_general_div {
     display: flex;
-    width: calc(100% - 20rem);
+    width: calc(100% - 20%);
     height: 17rem;
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.34);
@@ -683,7 +684,7 @@ footer a:hover {
 
 .login_section {
     display: flex;
-    width: calc(100% - 20rem);
+    width: calc(100% - 20%);
     height: calc(100svh - 10rem);
     justify-content: center;
     align-items: center;
@@ -749,7 +750,7 @@ footer a:hover {
 }
 
 #health_explorer_form_lg .health_explorer_div input {
-    width: calc(100% - (2rem));
+    width: calc(100% - 2rem);
     height: 3rem;
     padding: 0 1rem;
     border: 1px solid #1E1E1E;
@@ -790,7 +791,7 @@ footer a:hover {
 }  
 
 #health_partner_form_lg .health_partner_div input {
-    width: calc(100% - (2rem));
+    width: calc(100% - 2rem);
     height: 3rem;
     padding: 0 1rem;
     border: 1px solid #1E1E1E;
@@ -834,7 +835,7 @@ footer a:hover {
 
 .sign_up_section {
     display: flex;
-    width: calc(100% - 20rem);
+    width: calc(100% - 20%);
     height: calc(100svh - 10rem);
     justify-content: center;
     align-items: center;
@@ -901,7 +902,7 @@ footer a:hover {
 }    
 
 .health_explorer_details_sp input {
-    width: calc(100% - (2rem));
+    width: calc(100% - 2rem);
     height: 3rem;
     padding: 0 1rem;
     border: 1px solid #1E1E1E;
@@ -942,7 +943,7 @@ footer a:hover {
 }   
 
 .health_partner_details_sp input {
-    width: calc(100% - (2rem));
+    width: calc(100% - 2rem);
     height: 3rem;
     padding: 0 1rem;
     border: 1px solid #1E1E1E;
@@ -981,3 +982,22 @@ footer a:hover {
 }
 
 /*  */
+
+/* responsiveness will be revisited as this is desktop version */
+@media screen and (min-width: 1000px) and (max-width: 1220px) {    
+    header a {
+        padding: 1rem 1.2rem;
+    }
+
+    nav {
+        font-size: 1rem;
+    }
+    
+    nav ul {
+        gap: 0.5rem;
+    }
+    
+    header .logo {
+        font-size: 2rem;
+    }
+}

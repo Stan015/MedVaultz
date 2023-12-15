@@ -15,7 +15,7 @@
 html, body {
     display: flex;
     width: 100svw;
-    height: 100svh;
+    /* height: 100svh; */
     background-color: #F0F2F5;
     scroll-behavior: smooth;
 }
@@ -23,7 +23,7 @@ html, body {
 header {
     display: block;
     width: 17rem;
-    height: 100svh;
+    /* height: 100svh; */
     padding: 0 1rem;
     position: relative;
     background-color: #FFFFFF;
@@ -188,7 +188,7 @@ main .general_div {
     grid-template-rows: 6rem 25.5rem auto;
     height: calc(100% - 6rem);
     width: calc(100% - 4rem);
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 5rem 2rem 2rem 2rem;
     gap: 1rem;
     /* position: relative;
     top: 4rem; */
