@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="dashboard.css"></head>
 <body>
     <header>
-        <a href="#" class="logo">MedVaultz</a>
+        <a href="dashboard.html" class="logo">MedVaultz</a>
 
         <div class="general_div">
             <nav class="primary_db_nav">
@@ -196,22 +196,58 @@
                 <div class="quick_action">
                     <h3>Quick Actions</h3>
 
-                    <div>
-                        <div>
-                            <img src="/icons/calendar.svg" alt="calendar icon" class="calendar_icon">
+                    <div class="quick_action_general_div">
+                        <div class="quick_action_option">
+                            <img src="/icons/calendar.svg" alt="calendar icon" class="quick_action_icon">
 
-                            <div>
+                            <div class="quick_action_details">
                                 <div class="action">
                                     <h5>Book an Appointment</h5>
                                     <p>Find a doctor and specialization</p>
                                 </div>
 
-                                <img src="/icons/chevron-right.svg" alt="arrow forward">
+                                <img src="/icons/chevron-right.svg" alt="arrow forward" class="arrow_forward">
                             </div>
-
                         </div>
-                        <div></div>
-                        <div></div>                        
+
+                        <div class="quick_action_option">
+                            <img src="/icons/chat.svg" alt="chat icon" class="quick_action_icon">
+
+                            <div class="quick_action_details">
+                                <div class="action">
+                                    <h5>Request Consultation</h5>
+                                    <p>Talk to a specialist</p>
+                                </div>
+
+                                <img src="/icons/chevron-right.svg" alt="arrow forward" class="arrow_forward">
+                            </div>
+                        </div>    
+                        
+                        <div class="quick_action_option">
+                            <img src="/icons/map-marker.svg" alt="map icon" class="quick_action_icon">
+
+                            <div class="quick_action_details">
+                                <div class="action">
+                                    <h5>Locate a hospital near you</h5>
+                                    <p>Find closest hospitals</p>
+                                </div>
+
+                                <img src="/icons/chevron-right.svg" alt="arrow forward" class="arrow_forward">
+                            </div>
+                        </div>
+
+                        <div class="quick_action_option">
+                            <img src="/icons/loudspeaker.svg" alt="loudspeaker icon" class="quick_action_icon">
+
+                            <div class="quick_action_details last_child">
+                                <div class="action">
+                                    <h5>Emergency</h5>
+                                    <p>Request immediate help</p>
+                                </div>
+
+                                <img src="/icons/chevron-right.svg" alt="arrow forward" class="arrow_forward">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -219,7 +255,7 @@
                     <div class="recent_c_div_1">
                         <h3>Recent Consultations</h3>
 
-                        <a href="#" class="see_all">See all <img src="/icons/chevron-right.svg" alt="arrow forward"></a>
+                        <a href="#" class="see_all">See all <img src="/icons/chevron-right.svg" alt="arrow forward" class="arrow_forward"></a>
                     </div>
 
                     <div class="recent_c_div_2">
@@ -304,6 +340,6 @@
 
     </main>
 
-    <script src="/script.js"></script>
+    <script src="/dashboard.js"></script>
 </body>
 </html>
